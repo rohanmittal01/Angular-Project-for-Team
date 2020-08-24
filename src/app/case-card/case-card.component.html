@@ -1,0 +1,13 @@
+<div *ngIf="cases.cases != 0" class="card">
+    <img class="card-img-top" [src]="cases.countryInfo.flag"alt="{{cases.country}}" />
+    <div class="card-body">
+
+      <h6 class="card-title" style="text-align: center">{{ cases.country }}</h6>
+      <p class="card-text">Cases: {{ cases.cases }} +{{ cases.todayCases }}</p>
+      <p class="card-text">Active: {{ cases.active }}</p>
+      <p class="card-text">Recovered: {{cases.recovered}} +{{cases.todayRecovered}}</p>
+      <div class="card-text">Deaths: {{ cases.deaths }} +{{cases.todayDeaths}}</div>
+
+    </div>
+
+  </div>
